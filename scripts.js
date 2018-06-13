@@ -13,7 +13,8 @@ function initMap() {
         directionsDisplay.setMap(map);
 
         document.getElementById('submit').addEventListener('click', function() {
-          calculateAndDisplayRoute(directionsService, directionsDisplay);
+                distance = 0;
+                calculateAndDisplayRoute(directionsService, directionsDisplay);
         });
       }
 
