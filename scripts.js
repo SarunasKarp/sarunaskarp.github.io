@@ -18,6 +18,7 @@ function initMap() {
       }
 
       function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        distance = 0;
         var waypts = [];
         var checkboxArray = document.getElementById('waypoints');
         for (var i = 0; i < checkboxArray.length; i++) {
