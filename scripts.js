@@ -66,4 +66,3 @@ function removeField(){
   waypoints = document.getElementById('waypoints');
   waypoints.remove(waypoints.selectedIndex);
 }
-initMap();
