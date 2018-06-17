@@ -56,8 +56,7 @@ function initMap() {
             window.alert('Directions request failed due to ' + status);
           }
         });
-                s = document.getElementById('distance');
-	        s.innerHTML += distance;
+                window.alert(distance);
       }
 function addField(){
   waypoints = document.getElementById('waypoints');
