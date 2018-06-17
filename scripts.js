@@ -38,6 +38,7 @@ function initMap() {
           travelMode: 'DRIVING'
         }, function(response, status) {
           if (status === 'OK') {
+            window.alert(distance);
             directionsDisplay.setDirections(response);
             var route = response.routes[0];
             var summaryPanel = document.getElementById('directions-panel');
@@ -56,7 +57,6 @@ function initMap() {
             window.alert('Directions request failed due to ' + status);
           }
         });
-                window.alert(distance);
       }
 function addField(){
   waypoints = document.getElementById('waypoints');
